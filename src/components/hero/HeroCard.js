@@ -1,4 +1,5 @@
 
+import { Link } from 'react-router-dom'
 import { heroImages } from '../../helpers/heroImages'
 
 export const HeroCard = ({ id, superhero, first_appearance }) => {
@@ -12,7 +13,7 @@ export const HeroCard = ({ id, superhero, first_appearance }) => {
                   <small className='text-muted'>{first_appearance}</small>
                </p>
 
-               <a href="#" className="btn btn-primary">More...</a>
+               <Link to={`/hero/${id}`} className="btn btn-primary">More...</Link>
 
             </div>
          </div>
