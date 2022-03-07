@@ -1,5 +1,5 @@
 import { useNavigate, useParams } from "react-router-dom"
-import { getHeroById } from "../../helpers/gerHeroById";
+import { getHeroById } from "../../helpers/getHeroById";
 import { heroImages } from "../../helpers/heroImages";
 
 export const HeroScreen = () => {
